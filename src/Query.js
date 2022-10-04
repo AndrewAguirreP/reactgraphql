@@ -24,7 +24,7 @@ const githubQuery = {
     search(
       query: "user:andrewaguirrep sort:updated-desc"
       type: REPOSITORY
-      first: 10
+      first: 20
     ) {
       nodes {
         ... on Repository {
@@ -32,6 +32,7 @@ const githubQuery = {
           description
           id
           url
+          viewerSubscription
         }
       }
     }
